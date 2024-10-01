@@ -314,4 +314,11 @@ namespace HeadcrabMod
             StabWoundCount += 1;
         }
     }
+
+    public enum HeadcrabStates 
+    {
+        Unattached,
+        Attaching,
+        Attached
+    }
 }
