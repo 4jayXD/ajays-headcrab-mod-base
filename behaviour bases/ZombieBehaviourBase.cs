@@ -338,4 +338,10 @@ namespace HeadcrabMod
             }
         }
     }  
+
+    public enum ZombieStates 
+    {
+        Idle,
+        Agrivated
+    }
 }
