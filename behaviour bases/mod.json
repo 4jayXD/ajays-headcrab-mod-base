@@ -1,27 +1,18 @@
 {
-  "Name": "Ajay's Headcrab Mod development",
-  "Author": "me",
-  "Description": "use this to test.",
+  "Name": "example mod json",
+  "Author": "your mum",
+  "Description": "",
   "ModVersion": "0.1-dev",
   "GameVersion": "1.27.5",
   "ThumbnailPath": "thumbnail.png",
-  "EntryPoint": "HeadcrabMod.ModEntry",
+  "EntryPoint": "MumsHouse.ModEntry",
   "Tags": [
     "Fun"
   ],
   "Scripts": [
-    "mod.cs",
+    "replace this with the mod entry file name.",
     "scripts/ZombieBehaviourBase.cs",
-    "scripts/HeadcrabBehaviourBase.cs",
-    "scripts/utilites/HeadcrabZombieSpawnScript.cs",
-    "scripts/liquids/HeadcrabBlood.cs",
-    "scripts/liquids/NeuralStunner.cs",
-    "scripts/liquids/HeadcrabMutationLiquids.cs",
-    "scripts/headcrabs/NormalHeadcrabBehaviour.cs",
-    "scripts/headcrabs/FastHeadcrabBehaviour.cs",
-    "scripts/zombies/NormalZombieBehaviour.cs",
-    "scripts/zombies/FastZombieBehaviour.cs",
-    "scripts/zombies/ZombineBehaviour.cs"
+    "scripts/HeadcrabBehaviourBase.cs"
   ],
   "Active": false,
   "UGCIdentity": null,
