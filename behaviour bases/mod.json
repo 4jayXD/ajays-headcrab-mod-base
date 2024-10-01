@@ -11,8 +11,8 @@
   ],
   "Scripts": [
     "replace this with the mod entry file name.",
-    "scripts/ZombieBehaviourBase.cs",
-    "scripts/HeadcrabBehaviourBase.cs"
+    "ZombieBehaviourBase.cs",
+    "HeadcrabBehaviourBase.cs"
   ],
   "Active": false,
   "UGCIdentity": null,
