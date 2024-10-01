@@ -217,7 +217,7 @@ namespace HeadcrabMod
 
         }
     }
-    public class BodyBehaviour : MonoBehaviour, Messages.IShot, Messages.IStabbed
+    public class BodyBehaviour : MonoBehaviour, Messages.IShot, Messages.IStabbed // bit broken / crab dies on one shot. Feel free to fix it. Will update when fixed.
     {
         public float Health = 1f;
         public bool isConsideredAlive 
@@ -254,7 +254,7 @@ namespace HeadcrabMod
             Health = 0;
         }
     }
-    public class BodyCirculationBehaviour : BloodContainer, Messages.IShot, Messages.IExitShot, Messages.IStabbed, Messages.IUnstabbed
+    public class BodyCirculationBehaviour : BloodContainer, Messages.IShot, Messages.IExitShot, Messages.IStabbed, Messages.IUnstabbed // Blood Container. used to calculate health. Useless.
     {
         public string BloodLiquidID = HeadcrabBlood.ID;
         public HeadcrabBehaviourBase headcrabBehaviour;
