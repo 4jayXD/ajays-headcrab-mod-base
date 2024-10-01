@@ -3,7 +3,7 @@ using HeadcrabMod; // make sure this is here too
 
 namespace Example 
 {
-  public class CoolHeadcrabBehaviour : HeadcrabBehaviourBase //Make sure name of class matches file. & extend off of the HeadcrabBehaviourBase for a headcrab.
+  public class CoolHeadcrabBehaviour : HeadcrabBehaviourBase //Make sure name of class matches file. & extend off of the HeadcrabBehaviourBase.
   {
     [SkipSerialisation]
     public Sprite 
