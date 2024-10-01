@@ -246,12 +246,12 @@ namespace HeadcrabMod
 
         public void Shot(Shot shot)
         {
-            Health = 0;
+            Health = 0; // dies in one shot lol.
 
         }
         public void Stabbed(Stabbing stabbing)
         {
-            Health = 0;
+            Health = 0;  // dies in one shot lol.
         }
     }
     public class BodyCirculationBehaviour : BloodContainer, Messages.IShot, Messages.IExitShot, Messages.IStabbed, Messages.IUnstabbed // Blood Container. used to calculate health. Useless.
