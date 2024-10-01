@@ -1,5 +1,5 @@
 using UnityEngine;
-using HeadcrabMod;
+using HeadcrabMod; // make sure this is here too
 
 namespace Example 
 {
@@ -56,6 +56,16 @@ namespace Example
     public override void Detach() 
     {
       base.Detach();
+      SetSprite(detached_sprite)
+    }
+
+    public override void Transform() // function that runs when attachment is complete. Have fun adding your own logic that determines what zombie behaviour to add lol
+    {
+      zombieBehaviour = Host.AddComponent<CoolZombieBehaviour>();
+    }
+
+    public override void OnDeath() // when crab dies, this is run.
+    {
       SetSprite(detached_sprite)
     }
   }
