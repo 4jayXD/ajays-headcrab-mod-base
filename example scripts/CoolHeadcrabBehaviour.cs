@@ -5,19 +5,58 @@ namespace Example
 {
   public class CoolHeadcrabBehaviour : HeadcrabBehaviourBase //Make sure name of class matches file. & extend off of the HeadcrabBehaviourBase for a headcrab.
   {
-    public override void Start() 
+    [SkipSerialisation]
+    public Sprite 
+      attached_sprite, 
+      detached_sprite;
+
+    public override void GetAssets() // set up assets in this function. 
     {
       
+    } 
+    
+    public override void Start() 
+    {
+      base.Start();
+      SetSprite(detached_sprite); // sets the sprite to the specified sprite & resets the hitbox & outline :).
+
+      // PlaySound(Audioclip) // plays audioclip specified. But if there's a sound playing, it won't play.
+
+      // PlaySound(Audioclip, true) // plays the audioclip specified. & cancels out current clip playing.
     }
 
     public override void Update() 
     {
-      
+      base.Update();
+      if (!Dead) 
+      {
+        switch (State) 
+        {
+          case HeadcrabStates.Unattached: // Updates every frame when the headcrab is not attached to a person.
+          
+            break;
+
+          case HeadcrabStates.Attaching; // Updates every frame when the headcrab is attaching to a person.
+          
+            break;
+
+          case HeadcrabStates.Attached: // Updates every frame when the headcrab is attached to a person.
+          
+            break;
+        }
+      }
     }
 
     public override void Attach(GameObject host) // host = person being fucked up. Also Attaches the crab to the person.
     {
-      
+      base.Attach(host);
+      SetSprite(attached_sprite)
+    }
+
+    public override void Detach() 
+    {
+      base.Detach();
+      SetSprite(detached_sprite)
     }
   }
 }
