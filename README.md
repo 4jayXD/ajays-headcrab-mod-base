@@ -1,15 +1,4 @@
-# people-playground-npc-builder
-An easier way to build npcs in People Playground.
+# How 2 Use #
 
-# How Does it Work?
-
-# BuilderInstructions
-This struct stores:
- - the NPC's name
- - components
- - LimbBuilderInstructions
-
-# LimbBuilderInstructions
-This struct stores:
- - The Limb's Name
- - The GroupObjectName *Looks for a object with the same name inside of the NPC's GameObject*
+Add them to your mod's files. & reference them in the mod.json.
+Or download the template file.
