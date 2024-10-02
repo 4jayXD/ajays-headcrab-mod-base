@@ -49,13 +49,13 @@ namespace Example
 
     public override void Attach(GameObject host) // host = person being fucked up. Also Attaches the crab to the person.
     {
-      base.Attach(host);
+      base.Attach(host); // make sure to leave this here. Otherwise it will break.
       SetSprite(attached_sprite)
     }
 
     public override void Detach() 
     {
-      base.Detach();
+      base.Detach(); // make sure to leave this here. Otherwise it will break.
       SetSprite(detached_sprite)
     }
 
