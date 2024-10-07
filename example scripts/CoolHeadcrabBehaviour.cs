@@ -17,7 +17,7 @@ namespace Example
     
     public override void Start() 
     {
-      base.Start();
+      base.Start(); //make sure to have this here.
       SetSprite(detached_sprite); // sets the sprite to the specified sprite & resets the hitbox & outline :).
 
       // PlaySound(Audioclip) // plays audioclip specified. But if there's a sound playing, it won't play.
@@ -27,7 +27,7 @@ namespace Example
 
     public override void Update() 
     {
-      base.Update();
+      base.Update();//make sure to have this here
       if (!Dead) 
       {
         switch (State) 
