@@ -24,5 +24,10 @@ namespace Example
         {
         
         }
+
+        public class ZombieLimbBehaviour : LimbBehaviourBase 
+        {
+            
+        }
     }
 }
