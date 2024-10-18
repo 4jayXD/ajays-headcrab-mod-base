@@ -5,6 +5,9 @@ namespace Example
 {
     public class CoolZombieBehaviour : ZombieBehaviourBase 
     {
+        [SkipSerialisation]
+        public Sprite claw;
+        
         public override void GetAssets() //set up asset variables here.
         {
         
@@ -18,6 +21,9 @@ namespace Example
         public override void Update() // calls every frame.
         {
             base.Update();
+
+
+            
         }
 
         public override void OnDeath() //calls when zombie dies.
