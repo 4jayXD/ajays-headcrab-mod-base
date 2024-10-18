@@ -15,6 +15,11 @@ namespace Example
 
         public override void Start()  // calls when added to scene.
         {
+            foreach(var limb in hostBehaviour.Limbs) // do this to add exta functionallity to the zombie.
+            {
+                limb.gameObject.addComponent<ZombieLimbBehaviour>();
+            }
+            
             base.Start();
         }
 
@@ -22,7 +27,10 @@ namespace Example
         {
             base.Update();
 
-
+            foreach(var limb in ZombieLimbs) 
+            { 
+                limb.GenerateClaw(claw) // generates the claws. make sure to specify the lower arms tho. because it will just add a claw to every limb. Computers be like that.
+            }
             
         }
 
@@ -31,7 +39,7 @@ namespace Example
         
         }
 
-        public class ZombieLimbBehaviour : LimbBehaviourBase 
+        public class ZombieLimbBehaviour : LimbBehaviourBase  // do this to add exta functionallity to the zombie.
         {
             
         }
