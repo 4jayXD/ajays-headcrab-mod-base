@@ -10,14 +10,19 @@ namespace Example
         
         }
 
-        public override void Start() 
+        public override void Start()  // calls when added to scene.
         {
             base.Start();
         }
 
-        public override void Update()
+        public override void Update() // calls every frame.
         {
             base.Update();
+        }
+
+        public override void OnDeath() //calls when zombie dies.
+        {
+        
         }
     }
 }
